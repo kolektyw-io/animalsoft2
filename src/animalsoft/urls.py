@@ -21,6 +21,7 @@ import donations.urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('settings/', include(settings.urls)),
     path('donations/', include(donations.urls)),
     path('/', include(common.urls))
 ]

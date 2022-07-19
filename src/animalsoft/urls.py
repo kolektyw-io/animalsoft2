@@ -18,6 +18,8 @@ from django.urls import path, include
 
 import common.urls
 import donations.urls
+import settings.urls
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),

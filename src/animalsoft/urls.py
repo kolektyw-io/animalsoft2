@@ -18,9 +18,14 @@ from django.urls import path, include
 
 import common.urls
 import donations.urls
+import settings.urls
+import purchases.urls
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('settings/', include(settings.urls)),
     path('donations/', include(donations.urls)),
-    path('/', include(common.urls))
+    path('purchases/', include(purchases.urls)),
+    path('', include(common.urls))
 ]

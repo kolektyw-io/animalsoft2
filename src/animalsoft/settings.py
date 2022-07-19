@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-t^ttz%9p()$v9w%u7-4$*t^+t&42$xdybji1@dkuwc&0!o1*hq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,18 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'analytics',
+    'animals',
+    'common',
+    'crm',
+    'donations',
+    'finance',
+    'intervention',
+    'purchases',
+    'settings',
+    'supplies',
+    'volounteer',
+    'warehouse',
 ]
 
 MIDDLEWARE = [
@@ -129,7 +141,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Warsaw'
 
 USE_I18N = True
 
